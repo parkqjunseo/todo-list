@@ -18,6 +18,7 @@
   },
   "plugins": ["react"],
   "rules": {
-    "prettier/prettier": ["warn", { "endOfLine": "auto" }]
+    "prettier/prettier": ["warn", { "endOfLine": "auto" }],
+    "default-param-last": "off"
   }
 }
