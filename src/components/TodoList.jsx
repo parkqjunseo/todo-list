@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import TodoItem from './TodoItem';
 
-const TodoList = () => {
+function TodoList() {
   const todos = useSelector((state) => state.todos);
 
   return (
@@ -12,6 +12,6 @@ const TodoList = () => {
       ))}
     </div>
   );
-};
+}
 
 export default TodoList;

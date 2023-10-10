@@ -5,10 +5,11 @@ export const TOGGLE = 'TOGGLE_TODO';
 let prevId = 0;
 
 export const addTodo = (todo) => {
+  prevId += 1;
   return {
     type: ADD,
     todo: {
-      id: prevId++,
+      id: prevId,
       text: todo.text,
       done: todo.done,
     },

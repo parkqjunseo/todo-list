@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addTodo } from 'common/actions';
+import { addTodo } from '../common/actions';
 
-const InputForm = () => {
+function InputForm() {
   const dispatch = useDispatch();
 
   const [content, setContent] = useState('');
@@ -42,6 +42,6 @@ const InputForm = () => {
       </button>
     </div>
   );
-};
+}
 
 export default InputForm;

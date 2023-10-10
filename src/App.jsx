@@ -1,6 +1,6 @@
 import React from 'react';
-import InputForm from 'components/InputForm';
-import TodoList from 'components/TodoList';
+import InputForm from './components/InputForm';
+import TodoList from './components/TodoList';
 
 function App() {
   return (

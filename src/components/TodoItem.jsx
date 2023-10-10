@@ -2,9 +2,9 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { MdCheckBox, MdCheckBoxOutlineBlank } from 'react-icons/md';
-import { deleteTodo, toggleTodo } from 'common/actions';
+import { deleteTodo, toggleTodo } from '../common/actions';
 
-const TodoItem = ({ todo }) => {
+function TodoItem({ todo }) {
   const dispatch = useDispatch();
 
   const { id, text, done } = todo;
@@ -32,7 +32,7 @@ const TodoItem = ({ todo }) => {
       </button>
     </div>
   );
-};
+}
 
 TodoItem.propTypes = {
   todo: PropTypes.shape({
