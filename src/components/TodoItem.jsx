@@ -36,7 +36,7 @@ function TodoItem({ todo }) {
 
 TodoItem.propTypes = {
   todo: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     done: PropTypes.bool.isRequired,
   }).isRequired,

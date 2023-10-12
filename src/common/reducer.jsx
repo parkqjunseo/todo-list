@@ -1,10 +1,11 @@
+import { combineReducers } from 'redux';
 import { ADD, DELETE, TOGGLE } from './actions';
 
 const initialState = {
   todos: [],
 };
 
-const reducer = (state = initialState, action) => {
+const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD:
       return {
@@ -27,4 +28,6 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export default reducer;
+export default combineReducers({
+  todos: todoReducer,
+});
