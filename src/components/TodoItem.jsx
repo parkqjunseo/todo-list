@@ -28,7 +28,7 @@ function TodoItem({ todo }) {
       </div>
       <span>{text}</span>
       <button onClick={handleClick} type="button">
-        안해!!!
+        del
       </button>
     </div>
   );

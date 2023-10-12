@@ -1,3 +1,4 @@
+import { v4 } from 'uuid';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTodo } from '../common/actions';
@@ -14,6 +15,7 @@ function InputForm() {
 
   const handleClick = () => {
     const todo = {
+      id: v4(),
       text: content,
       done: false,
     };
@@ -32,13 +34,13 @@ function InputForm() {
     <div>
       <input
         type="text"
-        placeholder="할 일이 먼데"
+        placeholder="what is to do?"
         onChange={handleChange}
         value={content}
         onKeyDown={handleKeypress}
       />
       <button onClick={handleClick} type="submit">
-        +
+        (⁻꒫⁻)
       </button>
     </div>
   );
