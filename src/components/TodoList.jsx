@@ -6,9 +6,11 @@ function TodoList() {
   const todos = useSelector((state) => state.todos.todos);
 
   return (
-    <div>
+    <div className="mr-auto ml-auto">
       {todos.map((todo) => (
-        <TodoItem key={todo.id} todo={todo} />
+        <div className="mt-4">
+          <TodoItem key={todo.id} todo={todo} />
+        </div>
       ))}
     </div>
   );

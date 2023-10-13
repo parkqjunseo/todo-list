@@ -4,8 +4,8 @@ import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      <div className="text-5xl font-serif">☆*:.｡.꒰ঌToDoList꒱.｡.:*☆</div>
+    <div className="min-h-screen border flex flex-col items-center pt-20 max-h-[90vw]">
+      <div className="text-5xl font-medium">.｡:+*:ﾟto do list+｡.ﾟ･*.</div>
       <InputForm />
       <TodoList />
     </div>

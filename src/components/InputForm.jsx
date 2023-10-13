@@ -31,16 +31,17 @@ function InputForm() {
   };
 
   return (
-    <div>
+    <div className="mt-4">
       <input
         type="text"
         placeholder="what is to do?"
         onChange={handleChange}
         value={content}
         onKeyDown={handleKeypress}
+        className="font-medium border-b border-black focus:outline-none"
       />
-      <button onClick={handleClick} type="submit">
-        (⁻꒫⁻)
+      <button onClick={handleClick} type="submit" className="border px-2 py-1 rounded-full ml-5">
+        •ܫ•
       </button>
     </div>
   );
