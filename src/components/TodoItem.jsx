@@ -18,19 +18,19 @@ function TodoItem({ todo }) {
   };
 
   return (
-    <div className="mt-5 flex border rounded-5 shadow-lg w-[20rem] justify-between items-center">
+    <div className="mt-5 flex border rounded-full shadow-lg w-[20rem] h-[3.5rem] justify-between items-center">
       <div className="flex items-center ml-4">
         {done ? (
           <MdCheckBox onClick={handleCheckboxChange} className="cursor-pointer h-5 w-5" />
         ) : (
           <MdCheckBoxOutlineBlank onClick={handleCheckboxChange} className="cursor-pointer h-5 w-5" />
         )}
-        <span className="ml-3">{text}</span>
+        <span className="ml-3 text-white">{text}</span>
       </div>
       <button
         onClick={handleClick}
         type="button"
-        className="mr-5 border h-5 w-5 text-red-400 flex items-center justify-center text-sm"
+        className="mr-5 h-5 w-5 text-red-400 flex items-center justify-center text-sm"
       >
         ❌
       </button>

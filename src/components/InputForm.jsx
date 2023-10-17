@@ -31,16 +31,16 @@ function InputForm() {
   };
 
   return (
-    <div className="mt-4">
+    <div className="fixed bottom-10">
       <input
         type="text"
         placeholder="what is to do?"
         onChange={handleChange}
         value={content}
         onKeyDown={handleKeypress}
-        className="font-medium border-b border-black focus:outline-none"
+        className="font-medium border-b border-white focus:outline-none text-white bg-black"
       />
-      <button onClick={handleClick} type="submit" className="border px-2 py-1 rounded-full ml-5">
+      <button onClick={handleClick} type="submit" className="border px-2 py-1 rounded-full ml-5 text-white">
         •ܫ•
       </button>
     </div>
